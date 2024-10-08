@@ -15,8 +15,3 @@ def get_random_number():
     number = random.randint(0, 99)  # Generate a random number between 0 and 99
     return {"random_number": number}
 
-# POST endpoint for generating random numbers (optional, similar to the example above)
-@app.post("/random-post")
-def post_random_number():
-    number = random.randint(0, 99)
-    return {"random_number_via_post": number}
